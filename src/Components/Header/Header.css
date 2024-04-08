@@ -1,0 +1,51 @@
+/* Existing CSS remains unchanged */
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: none;
+  }
+
+  .nav-list.show {
+    display: block;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px auto;
+    transition: 0.4s;
+  }
+
+  .change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .change .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+}
+
+/* styling active navbar elements */
+/* Existing styles remain unchanged */
+
+.nav-item.active a {
+  color: white; /* Change the color to whatever you prefer for the active item */
+}
